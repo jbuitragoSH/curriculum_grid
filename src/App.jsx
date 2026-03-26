@@ -129,41 +129,70 @@ function Nodo({ materia, nodosAdelante, nodosAtras, isHovered, isRuta, isSelecci
 }
 
 // ---------- CONEXIÓN ----------
-function Conexion({ inicio, fin, nodosAdelante, nodosAtras, tipo }) {
-  const ref = useRef();
+function Conexion({ inicio, fin, nodosAdelante, nodosAtras, tipo, offsetIndex = 0, total = 1 }) {
+
+  const offset = (offsetIndex - (total - 1) / 2) * 0.8;
 
   const points = useMemo(() => {
     const curve = new THREE.CubicBezierCurve3(
-      new THREE.Vector3(inicio.sem * 5 + 1.8, inicio.fila * -3, 0),
-      new THREE.Vector3(inicio.sem * 5 + 3, inicio.fila * -3, 0),
-      new THREE.Vector3(fin.sem * 5 - 3, fin.fila * -3, 0),
-      new THREE.Vector3(fin.sem * 5 - 1.8, fin.fila * -3, 0)
+      new THREE.Vector3(inicio.sem * 5 + 1.8, inicio.fila * -3 + offset, 0),
+      new THREE.Vector3(inicio.sem * 5 + 3, inicio.fila * -3 + offset, 0),
+      new THREE.Vector3(fin.sem * 5 - 3, fin.fila * -3 + offset, 0),
+      new THREE.Vector3(fin.sem * 5 - 1.8, fin.fila * -3 + offset, 0)
     );
     return curve.getPoints(20);
-  }, [inicio, fin]);
+  }, [inicio, fin, offset]);
 
   const esAdelante = nodosAdelante?.has?.(inicio.id) && nodosAdelante?.has?.(fin.id);
-
   const esAtras = nodosAtras?.has?.(inicio.id) && nodosAtras?.has?.(fin.id);
 
-  useFrame((state) => {
-    if (ref.current) {
-      ref.current.material.dashOffset = -state.clock.getElapsedTime() * 0.5;
-    }
-  });
+  const esTunel = tipo === "tunel";
 
+  // 🎯 COLOR BASE
+  const color =
+    esAdelante ? COLORES.adelante :
+    esAtras ? COLORES.atras :
+    COLORES.neutro;
+
+  // =========================
+  // 🚇 TÚNEL (SIN LÍNEA)
+  // =========================
+  if (esTunel) {
+    return (
+      <>
+        {/* SALIDA */}
+        <mesh position={[inicio.sem * 5 + 2, inicio.fila * -3 + offset, 1]}>
+          <circleGeometry args={[0.18, 20]} />
+          <meshBasicMaterial color="#6366f1" />
+        </mesh>
+
+        {/* ENTRADA */}
+        <mesh position={[fin.sem * 5 - 2, fin.fila * -3 + offset, 1]}>
+          <circleGeometry args={[0.18, 20]} />
+          <meshBasicMaterial color="#a855f7" />
+        </mesh>
+
+        {/* LABEL */}
+        <Text
+          position={[fin.sem * 5 - 2, fin.fila * -3 + offset + 0.6, 1]}
+          fontSize={0.28}
+          color="#111"
+        >
+          ↦ {inicio.codigos?.[0] || inicio.id}
+        </Text>
+      </>
+    );
+  }
+
+  // =========================
+  // 🔗 LÍNEA NORMAL
+  // =========================
   return (
     <Line
       points={points}
-      color={
-        esAdelante
-          ? COLORES.adelante
-          : esAtras
-            ? COLORES.atras
-            : COLORES.neutro
-      }
+      color={color}
       lineWidth={2}
-      dashed={tipo === 'correq'}
+      dashed={tipo === "correq"}
       dashSize={0.2}
       gapSize={0.1}
     />
@@ -213,12 +242,6 @@ export default function App() {
     ];
   }, [materias]);
 
-  const mapaMaterias = useMemo(() => {
-    const map = new Map();
-    materias.forEach(m => map.set(m.id, m));
-    return map;
-  }, [materias]);
-
   const construirGrafo = (idBase) => {
       const adelante = new Set();
       const atras = new Set();
@@ -266,6 +289,54 @@ export default function App() {
     reader.readAsText(e.target.files[0]);
   };
 
+  const mapaMaterias = useMemo(() => {
+        const map = new Map();
+        materias.forEach(m => map.set(m.id, m));
+        return map;
+      }, [materias]);
+
+      // 🔥 PEGA AQUÍ ↓↓↓
+      const obtenerDependencias = (materia) => {
+        const resultado = [];
+
+        (materia.prereq || []).forEach((dep, offsetIndex) => {
+
+          if (typeof dep === "string") {
+            resultado.push({
+              id: dep,
+              tipo: "normal",
+              offsetIndex: offsetIndex,
+              total: materia.prereq.length
+            });
+          }
+
+          else if (typeof dep === "object" && typeof dep.id === "string") {
+            resultado.push({
+              id: dep.id,
+              tipo: dep.tipo || "normal",
+              offsetIndex: offsetIndex,
+              total: materia.prereq.length
+            });
+          }
+
+          else if (typeof dep === "object" && Array.isArray(dep.id)) {
+            dep.id.forEach((idInterno, i) => {
+              resultado.push({
+                id: idInterno,
+                tipo: dep.tipo || "normal",
+                offsetIndex: i,
+                total: dep.id.length
+              });
+            });
+          }
+
+        });
+
+        return resultado;
+      };
+
+
+      console.log("materias", materias);
   return (
 
     <div style={{
@@ -480,22 +551,24 @@ export default function App() {
 
         {/* CONEXIONES */}
         {materiasFiltradas.map(m =>
-          (m.prereq || []).map(pId => {
-            const ori = mapaMaterias.get(pId);
-            if (!ori) return null;
+            obtenerDependencias(m).map((dep, i) => {
+              const ori = mapaMaterias.get(dep.id);
+              if (!ori) return null;
 
-            return (
-              <Conexion
-                key={`p-${pId}-${m.id}`}
-                inicio={ori}
-                fin={m}
-                nodosAdelante={nodosAdelante}
-                nodosAtras={nodosAtras}
-                tipo="pre"
-              />
-            );
-          })
-        )}
+              return (
+                <Conexion
+                  key={`p-${dep.id}-${m.id}-${i}`}
+                  inicio={ori}
+                  fin={m}
+                  nodosAdelante={nodosAdelante}
+                  nodosAtras={nodosAtras}
+                  tipo={dep.tipo}
+                  offsetIndex={dep.offsetIndex}
+                  total={dep.total}
+                />
+              );
+            })
+          )}
 
         {/* NODOS */}
         {materiasFiltradas.map(m => (

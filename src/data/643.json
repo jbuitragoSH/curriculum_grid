@@ -51,36 +51,36 @@
   { "id": "39", "nombre": "ELECTIVA SOCIOHUM. II", "sem": 6, "fila": 8, "cred": 2, "area": "humanidades", "prereq": ["33"], "codigos": ["ES2"], "desc": "Electiva humanística." },
 
   { "id": "40", "nombre": "CONVERGENCIA DE REDES", "sem": 7, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["34"], "codigos": ["CORED11"], "desc": "Integración de redes." },
-  { "id": "41", "nombre": "ARQUITECTURA DEL SOFTWARE", "sem": 7, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["29","35"], "codigos": ["ARSOF12"], "desc": "Diseño de software." },
-  { "id": "42", "nombre": "MINERÍA DE DATOS", "sem": 7, "fila": 4, "cred": 4, "area": "programacion", "prereq": ["35","37"], "codigos": ["MINDAT11"], "desc": "Análisis de datos." },
+  { "id": "41", "nombre": "ARQUITECTURA DEL SOFTWARE", "sem": 7, "fila": 2, "cred": 3, "area": "programacion", "prereq": ["29","35"], "codigos": ["ARSOF12"], "desc": "Diseño de software." },
+  { "id": "42", "nombre": "MINERÍA DE DATOS", "sem": 7, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["35","37"], "codigos": ["MINDAT11"], "desc": "Análisis de datos." },
 
-  { "id": "43", "nombre": "PROF. I", "sem": 7, "fila": 2, "cred": 3, "area": "sistemas", "prereq": ["21","22"], "codigos": ["PROF1"], "desc": "Electiva disciplinar." },
+  { "id": "43", "nombre": "PROF. I", "sem": 7, "fila": 4, "cred": 3, "area": "sistemas", "prereq": [{ "id": "21", "tipo": "tunel" },{ "id": "22", "tipo": "tunel" }], "codigos": ["PROF1"], "desc": "Electiva disciplinar." },
   { "id": "44", "nombre": "ESTADÍSTICA INFERENCIAL", "sem": 7, "fila": 5, "cred": 2, "area": "matematicas", "prereq": ["37"], "codigos": ["ESINF11"], "desc": "Inferencia estadística." },
 
   { "id": "45", "nombre": "ELECTIVA COMPLEM. III", "sem": 7, "fila": 6, "cred": 2, "area": "gestion", "prereq": ["25"], "codigos": ["EC3"], "desc": "Electiva." },
   { "id": "46", "nombre": "ELECTIVA SOCIOHUM. III", "sem": 7, "fila": 8, "cred": 2, "area": "humanidades", "prereq": ["39"], "codigos": ["ES3"], "desc": "Electiva humanística." },
 
   { "id": "47", "nombre": "ARQUITECTURA DEL HARDWARE", "sem": 8, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["9"], "codigos": ["ARQUH11"], "desc": "Arquitectura de computadores." },
-  { "id": "48", "nombre": "ASEGURAMIENTO DE CALIDAD", "sem": 8, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["41"], "codigos": ["ASCAS12"], "desc": "Calidad del software." },
-  { "id": "49", "nombre": "SISTEMAS EXPERTOS", "sem": 8, "fila": 4, "cred": 3, "area": "programacion", "prereq": ["42"], "codigos": ["SISTE11"], "desc": "Sistemas inteligentes." },
+  { "id": "48", "nombre": "ASEGURAMIENTO DE CALIDAD", "sem": 8, "fila": 2, "cred": 3, "area": "programacion", "prereq": ["41"], "codigos": ["ASCAS12"], "desc": "Calidad del software." },
+  { "id": "49", "nombre": "SISTEMAS EXPERTOS", "sem": 8, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["42"], "codigos": ["SISTE11"], "desc": "Sistemas inteligentes." },
 
-  { "id": "50", "nombre": "PROF. II", "sem": 8, "fila": 2, "cred": 3, "area": "sistemas", "prereq": ["43"], "codigos": ["PROF2"], "desc": "Profundización disciplinar." },
+  { "id": "50", "nombre": "PROF. II", "sem": 8, "fila": 4, "cred": 3, "area": "sistemas", "prereq": ["43"], "codigos": ["PROF2"], "desc": "Profundización disciplinar." },
   { "id": "51", "nombre": "ALGEBRA Y PROGRAMACIÓN LINEAL", "sem": 8, "fila": 5, "cred": 2, "area": "matematicas", "prereq": ["18"], "codigos": ["ALPLN31"], "desc": "Optimización matemática." },
   { "id": "52", "nombre": "ÉTICA PROFESIONAL", "sem": 8, "fila": 8, "cred": 2, "area": "humanidades", "prereq": ["27"], "codigos": ["ETICA41"], "desc": "Ética en ingeniería." },
 
   { "id": "53", "nombre": "ADMINISTRACIÓN TECNOLÓGICA", "sem": 9, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["40"], "codigos": ["ADMRT11"], "desc": "Gestión tecnológica." },
-  { "id": "54", "nombre": "INGENIERÍA DEL SOFTWARE", "sem": 9, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["41"], "codigos": ["INSOF11"], "desc": "Ciclo de vida del software." },
-  { "id": "55", "nombre": "INTELIGENCIA ARTIFICIAL", "sem": 9, "fila": 4, "cred": 3, "area": "programacion", "prereq": ["42","51"], "codigos": ["IARTIF12"], "desc": "Modelos de IA." },
+  { "id": "54", "nombre": "INGENIERÍA DEL SOFTWARE", "sem": 9, "fila": 2, "cred": 3, "area": "programacion", "prereq": ["41"], "codigos": ["INSOF11"], "desc": "Ciclo de vida del software." },
+  { "id": "55", "nombre": "INTELIGENCIA ARTIFICIAL", "sem": 9, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["42","51"], "codigos": ["IARTIF12"], "desc": "Modelos de IA." },
 
-  { "id": "56", "nombre": "PROF. III", "sem": 9, "fila": 2, "cred": 3, "area": "sistemas", "prereq": ["50"], "codigos": ["PROF3"], "desc": "Especialización." },
+  { "id": "56", "nombre": "PROF. III", "sem": 9, "fila": 4, "cred": 3, "area": "sistemas", "prereq": ["50"], "codigos": ["PROF3"], "desc": "Especialización." },
   { "id": "57", "nombre": "INVESTIGACIÓN DE OPERACIONES", "sem": 9, "fila": 5, "cred": 3, "area": "matematicas", "prereq": ["44"], "codigos": ["INVOI31"], "desc": "Optimización y modelos." },
   { "id": "58", "nombre": "PRÁCTICA I", "sem": 9, "fila": 7, "cred": 3, "area": "gestion", "prereq": ["38"], "codigos": ["PRACEMS21"], "desc": "Práctica profesional." },
 
 
   { "id": "59", "nombre": "AUDITORÍA EN SISTEMAS", "sem": 10, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["53"], "codigos": ["AUSIS12"], "desc": "Auditoría TI." },
-  { "id": "60", "nombre": "SEMINARIO CERTIFICACIÓN", "sem": 10, "fila": 3, "cred": 3, "area": "sistemas", "prereq": ["54"], "codigos": ["SCERT12"], "desc": "Preparación certificación." },
+  { "id": "60", "nombre": "SEMINARIO CERTIFICACIÓN", "sem": 10, "fila": 2, "cred": 3, "area": "sistemas", "prereq": ["54"], "codigos": ["SCERT12"], "desc": "Preparación certificación." },
 
-  { "id": "61", "nombre": "PROF. IV", "sem": 10, "fila": 2, "cred": 3, "area": "sistemas", "prereq": ["56"], "codigos": ["PROF4"], "desc": "Especialización final." },
+  { "id": "61", "nombre": "PROF. IV", "sem": 10, "fila":4, "cred": 3, "area": "sistemas", "prereq": ["56"], "codigos": ["PROF4"], "desc": "Especialización final." },
   { "id": "62", "nombre": "MODELOS DE SIMULACIÓN", "sem": 10, "fila": 5, "cred": 3, "area": "matematicas", "prereq": ["44","57"], "codigos": ["MOSEI31"], "desc": "Simulación estadística." },
   { "id": "63", "nombre": "FORMULACIÓN DE PROYECTOS", "sem": 10, "fila": 6, "cred": 3, "area": "gestion", "prereq": ["57"], "codigos": ["FORPRO11"], "desc": "Evaluación de proyectos." },
   { "id": "64", "nombre": "PRÁCTICA II", "sem": 10, "fila": 7, "cred": 3, "area": "gestion", "prereq": ["58"], "codigos": ["PRACEMS22"], "desc": "Práctica profesional." }
