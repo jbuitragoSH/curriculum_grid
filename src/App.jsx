@@ -294,7 +294,7 @@ export default function App() {
 
         {/* LOGO / NOMBRE */}
         <div style={{ fontWeight: 'bold' }}>
-          🎓 Malla Interactiva
+          🎓 Malla Interactiva SyH
         </div>
 
         {/* SELECTOR PROGRAMA */}
