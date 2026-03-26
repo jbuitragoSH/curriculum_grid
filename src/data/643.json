@@ -1,0 +1,91 @@
+[
+  { "id": "1", "nombre": "HARDWARE", "sem": 1, "fila": 1, "cred": 3, "area": "sistemas", "prereq": [], "codigos": ["HARDW11","HARDW13"], "desc": "Estudio de los componentes físicos del computador, su funcionamiento y ensamblaje." },
+  { "id": "2", "nombre": "LÓGICA DE PROGRAMACIÓN", "sem": 1, "fila": 2, "cred": 2, "area": "programacion", "prereq": [], "codigos": ["LOGPR11","LOGPR12"], "desc": "Fundamentos del pensamiento lógico y construcción de algoritmos." },
+  { "id": "4", "nombre": "COMPETENCIAS INFORMÁTICAS", "sem": 1, "fila": 3, "cred": 2, "area": "programacion", "prereq": [], "codigos": ["CINFO21","CINFO24","IN4COI1"], "desc": "Uso de herramientas digitales y ofimáticas." },
+  { "id": "3", "nombre": "INTRODUCCIÓN A LOS SISTEMAS", "sem": 1, "fila": 4, "cred": 2, "area": "sistemas", "prereq": [], "codigos": ["INSIS11","INSIS12"], "desc": "Conceptos básicos de sistemas de información y su aplicación." },
+
+  { "id": "5", "nombre": "MATEMATICAS OPERATIVAS", "sem": 1, "fila": 5, "cred": 3, "area": "matematicas", "prereq": [], "codigos": ["MATTI31","MATOP31","MATPI31"], "desc": "Operaciones matemáticas aplicadas a problemas básicos." },
+  { "id": "6", "nombre": "GEOMETRÍA Y TRIGONOMETRÍA", "sem": 1, "fila": 6, "cred": 2, "area": "matematicas", "prereq": [], "codigos": ["GETRI31"], "desc": "Fundamentos de geometría y trigonometría." },
+  { "id": "7", "nombre": "CULTURA CONSTITUCIONAL", "sem": 1, "fila": 7, "cred": 2, "area": "humanidades", "prereq": [], "codigos": ["CONST21"], "desc": "Formación en principios constitucionales y ciudadanía." },
+  { "id": "8", "nombre": "REDACCIÓN Y ORTOGRAFÍA", "sem": 1, "fila": 8, "cred": 2, "area": "humanidades", "prereq": [], "codigos": ["REYOR41","REYORT41"], "desc": "Desarrollo de habilidades de escritura correcta." },
+
+
+  { "id": "9", "nombre": "SISTEMAS OPERATIVOS", "sem": 2, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["1"], "codigos": ["SISOPE11"], "desc": "Gestión de procesos, memoria y sistemas operativos." },
+  { "id": "10", "nombre": "ALGORITMOS Y PROGRAMACIÓN", "sem": 2, "fila": 2, "cred": 3, "area": "programacion", "prereq": ["2", "4"], "codigos": ["ALPROG11"], "desc": "Desarrollo de programas y estructuras algorítmicas." },
+
+  { "id": "11", "nombre": "CÁLCULO DIFERENCIAL", "sem": 2, "fila": 5, "cred": 3, "area": "matematicas", "prereq": ["5","6"], "codigos": ["CALDN31","CALDI31"], "desc": "Límites y derivadas aplicadas." },
+  { "id": "12", "nombre": "ELECTIVA COMPLEM. I", "sem": 2, "fila": 6, "cred": 2, "area": "gestion", "prereq": [], "codigos": ["EC1"], "desc": "Curso electivo de formación integral." },
+
+  { "id": "13", "nombre": "CRISTOLOGÍA", "sem": 2, "fila": 7, "cred": 3, "area": "humanidades", "prereq": [], "codigos": ["CRISTO41"], "desc": "Estudio teológico de la figura de Cristo." },
+  { "id": "14", "nombre": "COMPRENSIÓN LECTORA", "sem": 2, "fila": 8, "cred": 2, "area": "humanidades", "prereq": ["8"], "codigos": ["COMLE41"], "desc": "Análisis e interpretación de textos." },
+  { "id": "15", "nombre": "TRANSMISION DE DATOS", "sem": 3, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["9"], "codigos": ["TRADA11"], "desc": "Principios de comunicación de datos." },
+  { "id": "16", "nombre": "INTROD. A LOS LENG. DE PROGR.", "sem": 3, "fila": 2, "cred": 3, "area": "programacion", "prereq": ["10"], "codigos": ["ILEPRO11"], "desc": "Paradigmas de programación." },
+  { "id": "17", "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS", "sem": 3, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["3","10"], "codigos": ["ANADI11","ANADI12"], "desc": "Modelado de sistemas de información." },
+  { "id": "18", "nombre": "CÁLCULO INTEGRAL", "sem": 3, "fila": 5, "cred": 3, "area": "matematicas", "prereq": ["11"], "codigos": ["CALIN31"], "desc": "Integrales y aplicaciones." },
+  { "id": "19", "nombre": "FUNDAMENTOS DE INVESTIGACIÓN", "sem": 3, "fila": 7, "cred": 2, "area": "gestion", "prereq": [], "codigos": ["FUNDINV21"], "desc": "Metodología de investigación." },
+  { "id": "20", "nombre": "COMUNICACIÓN ESCRITURAL", "sem": 3, "fila": 8, "cred": 2, "area": "humanidades", "prereq": ["14"], "codigos": ["COESC41"], "desc": "Producción de textos académicos." },
+
+  { "id": "21", "nombre": "REDES AREA LOCAL", "sem": 4, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["15"], "codigos": ["RELAL11"], "desc": "Diseño de redes LAN." },
+  { "id": "22", "nombre": "LENG. DE POO", "sem": 4, "fila": 2, "cred": 3, "area": "programacion", "prereq": ["16"], "codigos": ["LPORO11"], "desc": "Programación orientada a objetos." },
+  { "id": "23", "nombre": "ESTRUCTURA DE DATOS", "sem": 4, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["16"], "codigos": ["ESTDA11"], "desc": "Estructuras de datos fundamentales." },
+
+  { "id": "24", "nombre": "ECUACIONES DIFERENCIALES", "sem": 4, "fila": 5, "cred": 2, "area": "matematicas", "prereq": ["18"], "codigos": ["ECDEF31","ECDIF31"], "desc": "Resolución de ecuaciones diferenciales." },
+  { "id": "25", "nombre": "ELECTIVA COMPLEM. II", "sem": 4, "fila": 6, "cred": 2, "area": "gestion", "prereq": ["12"], "codigos": ["EC2"], "desc": "Curso electivo." },
+  { "id": "26", "nombre": "COMP. INVESTIGAT. o EMPRISMO I", "sem": 4, "fila": 7, "cred": 2, "area": "gestion", "prereq": ["19"], "codigos": ["COMINV21","COMEMP21"], "desc": "Introducción a investigación o emprendimiento." },
+  { "id": "27", "nombre": "RETÓRICA Y ARGUMENTACION", "sem": 4, "fila": 8, "cred": 2, "area": "humanidades", "prereq": ["20"], "codigos": ["RETOR41"], "desc": "Argumentación y discurso." },
+
+  { "id": "28", "nombre": "REDES DE AREA EXTENSA", "sem": 5, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["21"], "codigos": ["REDEX11"], "desc": "Redes WAN." },
+  { "id": "29", "nombre": "LENGUAJE WEB", "sem": 5, "fila": 2, "cred": 3, "area": "programacion", "prereq": ["22","17"], "codigos": ["LENWEB11"], "desc": "Desarrollo web." },
+  { "id": "30", "nombre": "BASES DE DATOS I", "sem": 5, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["23"], "codigos": ["BADAT11"], "desc": "Modelado y SQL." },
+  { "id": "31", "nombre": "FÍSICA MECÁNICA", "sem": 5, "fila": 4, "cred": 3, "area": "matematicas", "prereq": ["11"], "codigos": ["FISME31"], "desc": "Fundamentos de mecánica." },
+
+  { "id": "32", "nombre": "COMP. INVESTIGAT. o EMPRISMO II", "sem": 5, "fila": 7, "cred": 2, "area": "gestion", "prereq": ["26"], "codigos": ["COMINV22"], "desc": "Desarrollo de proyectos." },
+  { "id": "33", "nombre": "ELECTIVA SOCIOHUM. I", "sem": 5, "fila": 8, "cred": 2, "area": "humanidades", "prereq": [], "codigos": ["ES2"], "desc": "Electiva humanística." },
+
+  { "id": "34", "nombre": "SERVIDORES", "sem": 6, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["28"], "codigos": ["SERVI11"], "desc": "Administración de servidores." },
+  { "id": "35", "nombre": "BASES DE DATOS II", "sem": 6, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["30"], "codigos": ["BDATO12"], "desc": "Optimización y bases avanzadas." },
+  { "id": "36", "nombre": "FÍSICA ELECTROMAGNET.", "sem": 6, "fila": 4, "cred": 3, "area": "matematicas", "prereq": ["31"], "codigos": ["FIELE31"], "desc": "Electromagnetismo." },
+  { "id": "37", "nombre": "ESTADISTICA GENERAL", "sem": 6, "fila": 5, "cred": 3, "area": "matematicas", "prereq": ["11"], "codigos": ["ESTGI31"], "desc": "Probabilidad y estadística." },
+
+  { "id": "38", "nombre": "COMP. INVESTIGAT. o EMPRISMO III", "sem": 6, "fila": 7, "cred": 2, "area": "gestion", "prereq": ["32"], "codigos": ["COMINV23"], "desc": "Investigación aplicada." },
+  { "id": "39", "nombre": "ELECTIVA SOCIOHUM. II", "sem": 6, "fila": 8, "cred": 2, "area": "humanidades", "prereq": ["33"], "codigos": ["ES2"], "desc": "Electiva humanística." },
+
+  { "id": "40", "nombre": "CONVERGENCIA DE REDES", "sem": 7, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["34"], "codigos": ["CORED11"], "desc": "Integración de redes." },
+  { "id": "41", "nombre": "ARQUITECTURA DEL SOFTWARE", "sem": 7, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["29","35"], "codigos": ["ARSOF12"], "desc": "Diseño de software." },
+  { "id": "42", "nombre": "MINERÍA DE DATOS", "sem": 7, "fila": 4, "cred": 4, "area": "programacion", "prereq": ["35","37"], "codigos": ["MINDAT11"], "desc": "Análisis de datos." },
+
+  { "id": "43", "nombre": "PROF. I", "sem": 7, "fila": 2, "cred": 3, "area": "sistemas", "prereq": ["21","22"], "codigos": ["PROF1"], "desc": "Electiva disciplinar." },
+  { "id": "44", "nombre": "ESTADÍSTICA INFERENCIAL", "sem": 7, "fila": 5, "cred": 2, "area": "matematicas", "prereq": ["37"], "codigos": ["ESINF11"], "desc": "Inferencia estadística." },
+
+  { "id": "45", "nombre": "ELECTIVA COMPLEM. III", "sem": 7, "fila": 6, "cred": 2, "area": "gestion", "prereq": ["25"], "codigos": ["EC3"], "desc": "Electiva." },
+  { "id": "46", "nombre": "ELECTIVA SOCIOHUM. III", "sem": 7, "fila": 8, "cred": 2, "area": "humanidades", "prereq": ["39"], "codigos": ["ES3"], "desc": "Electiva humanística." },
+
+  { "id": "47", "nombre": "ARQUITECTURA DEL HARDWARE", "sem": 8, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["9"], "codigos": ["ARQUH11"], "desc": "Arquitectura de computadores." },
+  { "id": "48", "nombre": "ASEGURAMIENTO DE CALIDAD", "sem": 8, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["41"], "codigos": ["ASCAS12"], "desc": "Calidad del software." },
+  { "id": "49", "nombre": "SISTEMAS EXPERTOS", "sem": 8, "fila": 4, "cred": 3, "area": "programacion", "prereq": ["42"], "codigos": ["SISTE11"], "desc": "Sistemas inteligentes." },
+
+  { "id": "50", "nombre": "PROF. II", "sem": 8, "fila": 2, "cred": 3, "area": "sistemas", "prereq": ["43"], "codigos": ["PROF2"], "desc": "Profundización disciplinar." },
+  { "id": "51", "nombre": "ALGEBRA Y PROGRAMACIÓN LINEAL", "sem": 8, "fila": 5, "cred": 2, "area": "matematicas", "prereq": ["18"], "codigos": ["ALPLN31"], "desc": "Optimización matemática." },
+  { "id": "52", "nombre": "ÉTICA PROFESIONAL", "sem": 8, "fila": 8, "cred": 2, "area": "humanidades", "prereq": ["27"], "codigos": ["ETICA41"], "desc": "Ética en ingeniería." },
+
+  { "id": "53", "nombre": "ADMINISTRACIÓN TECNOLÓGICA", "sem": 9, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["40"], "codigos": ["ADMRT11"], "desc": "Gestión tecnológica." },
+  { "id": "54", "nombre": "INGENIERÍA DEL SOFTWARE", "sem": 9, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["41"], "codigos": ["INSOF11"], "desc": "Ciclo de vida del software." },
+  { "id": "55", "nombre": "INTELIGENCIA ARTIFICIAL", "sem": 9, "fila": 4, "cred": 3, "area": "programacion", "prereq": ["42","51"], "codigos": ["IARTIF12"], "desc": "Modelos de IA." },
+
+  { "id": "56", "nombre": "PROF. III", "sem": 9, "fila": 2, "cred": 3, "area": "sistemas", "prereq": ["50"], "codigos": ["PROF3"], "desc": "Especialización." },
+  { "id": "57", "nombre": "INVESTIGACIÓN DE OPERACIONES", "sem": 9, "fila": 5, "cred": 3, "area": "matematicas", "prereq": ["44"], "codigos": ["INVOI31"], "desc": "Optimización y modelos." },
+  { "id": "58", "nombre": "PRÁCTICA I", "sem": 9, "fila": 7, "cred": 3, "area": "gestion", "prereq": ["38"], "codigos": ["PRACEMS21"], "desc": "Práctica profesional." },
+
+
+  { "id": "59", "nombre": "AUDITORÍA EN SISTEMAS", "sem": 10, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["53"], "codigos": ["AUSIS12"], "desc": "Auditoría TI." },
+  { "id": "60", "nombre": "SEMINARIO CERTIFICACIÓN", "sem": 10, "fila": 3, "cred": 3, "area": "sistemas", "prereq": ["54"], "codigos": ["SCERT12"], "desc": "Preparación certificación." },
+
+  { "id": "61", "nombre": "PROF. IV", "sem": 10, "fila": 2, "cred": 3, "area": "sistemas", "prereq": ["56"], "codigos": ["PROF4"], "desc": "Especialización final." },
+  { "id": "62", "nombre": "MODELOS DE SIMULACIÓN", "sem": 10, "fila": 5, "cred": 3, "area": "matematicas", "prereq": ["44","57"], "codigos": ["MOSEI31"], "desc": "Simulación estadística." },
+  { "id": "63", "nombre": "FORMULACIÓN DE PROYECTOS", "sem": 10, "fila": 6, "cred": 3, "area": "gestion", "prereq": ["57"], "codigos": ["FORPRO11"], "desc": "Evaluación de proyectos." },
+  { "id": "64", "nombre": "PRÁCTICA II", "sem": 10, "fila": 7, "cred": 3, "area": "gestion", "prereq": ["58"], "codigos": ["PRACEMS22"], "desc": "Práctica profesional." }
+]
+
+
+
+

@@ -1,0 +1,54 @@
+[
+  { "id": "1", "nombre": "HARDWARE", "sem": 1, "fila": 1, "cred": 3, "area": "sistemas", "prereq": [], "codigos": ["HARDW11","HARDW13","PRI2403"], "desc": "Fundamentos de hardware y arquitectura básica de computadores." },
+  { "id": "2", "nombre": "LÓGICA DE PROGRAMACIÓN", "sem": 1, "fila": 2, "cred": 2, "area": "programacion", "prereq": [], "codigos": ["LOGPR11","LOGPR12"], "desc": "Bases del pensamiento lógico y resolución de problemas computacionales." },
+  { "id": "3", "nombre": "COMPETENCIAS INFORMÁTICAS", "sem": 1, "fila": 3, "cred": 2, "area": "programacion", "prereq": [], "codigos": ["CINFO21","CINFO24","IN4COI1","INF2401"], "desc": "Herramientas informáticas básicas para el entorno académico y profesional." },
+  { "id": "4", "nombre": "INTRODUCCIÓN A LOS SISTEMAS", "sem": 1, "fila": 4, "cred": 2, "area": "sistemas", "prereq": [], "codigos": ["INSIS11","INSIS12","INT24011"], "desc": "Conceptos fundamentales de sistemas y su aplicación en ingeniería." },
+
+  { "id": "5", "nombre": "MATEMATICAS OPERATIVAS", "sem": 1, "fila": 5, "cred": 3, "area": "matematicas", "prereq": [], "codigos": ["MATTI31","MATOP31","MATPI31"], "desc": "Operaciones matemáticas fundamentales aplicadas." },
+  { "id": "6", "nombre": "GEOMETRÍA Y TRIGONOMETRÍA", "sem": 1, "fila": 6, "cred": 2, "area": "matematicas", "prereq": [], "codigos": ["GETRI31"], "desc": "Conceptos geométricos y trigonométricos básicos." },
+  { "id": "7", "nombre": "REDACCIÓN Y ORTOGRAFÍA", "sem": 1, "fila": 7, "cred": 2, "area": "humanidades", "prereq": [], "codigos": ["REYOR41","REYORT41"], "desc": "Habilidades de escritura y comunicación escrita." },
+  { "id": "8", "nombre": "CULTURA CONSTITUCIONAL", "sem": 1, "fila": 8, "cred": 2, "area": "humanidades", "prereq": [], "codigos": ["CONST21"], "desc": "Fundamentos de la constitución y ciudadanía." },
+
+  { "id": "9", "nombre": "SISTEMAS OPERATIVOS", "sem": 2, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["1"], "codigos": ["SISOPE11","OPE2406"], "desc": "Principios de sistemas operativos y administración de recursos." },
+  { "id": "10", "nombre": "ALGORITMOS Y PROGRAMACIÓN", "sem": 2, "fila": 2, "cred": 3, "area": "programacion", "prereq": ["2","3"], "codigos": ["ALPROG11"], "desc": "Diseño de algoritmos y desarrollo de programas básicos." },
+  { "id": "11", "nombre": "ELECTIVA COMPLEM. I", "sem": 2, "fila": 4, "cred": 2, "area": "gestion", "prereq": [], "codigos": ["EC1"], "desc": "Asignatura electiva complementaria." },
+  { "id": "12", "nombre": "CÁLCULO DIFERENCIAL", "sem": 2, "fila": 5, "cred": 3, "area": "matematicas", "prereq": ["5","6"], "codigos": ["CALDN31","CALDI31"], "desc": "Introducción al cálculo diferencial." },
+  { "id": "13", "nombre": "COMPRENSIÓN LECTORA", "sem": 2, "fila": 7, "cred": 2, "area": "humanidades", "prereq": ["7"], "codigos": ["COMLE41"], "desc": "Desarrollo de habilidades de lectura crítica." },
+  { "id": "14", "nombre": "CRISTOLOGÍA", "sem": 2, "fila": 8, "cred": 3, "area": "humanidades", "prereq": [], "codigos": ["CRISTO41"], "desc": "Estudio de fundamentos teológicos." },
+
+  { "id": "15", "nombre": "TRANSMISION DE DATOS", "sem": 3, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["9"], "codigos": ["TRADA11"], "desc": "Fundamentos de transmisión de datos y comunicaciones." },
+  { "id": "16", "nombre": "INTROD. A LOS LENG. DE PROGR.", "sem": 3, "fila": 2, "cred": 3, "area": "programacion", "prereq": ["10"], "codigos": ["ILEPRO11","LEN22402"], "desc": "Conceptos de lenguajes de programación." },
+  { "id": "17", "nombre": "ANÁLISIS Y DISEÑO DE SISTEMAS", "sem": 3, "fila": 3, "cred": 3, "area": "sistemas", "prereq": ["4","10"], "codigos": ["ANADI11","ANADI12"], "desc": "Metodologías de análisis y diseño de sistemas." },
+  { "id": "18", "nombre": "ESTADISTICA GENERAL", "sem": 3, "fila": 5, "cred": 3, "area": "matematicas", "prereq": ["12"], "codigos": ["ESTGI31","ESTGE31","EST2405"], "desc": "Fundamentos de estadística descriptiva." },
+  { "id": "19", "nombre": "FUNDAMENTOS DE INVESTIGACIÓN", "sem": 3, "fila": 6, "cred": 2, "area": "gestion", "prereq": [], "codigos": ["FUNDINV21","MET2402"], "desc": "Bases metodológicas de investigación." },
+  { "id": "20", "nombre": "COMUNICACIÓN ESCRITURAL", "sem": 3, "fila": 7, "cred": 2, "area": "humanidades", "prereq": ["13"], "codigos": ["COESC41"], "desc": "Producción de textos académicos." },
+  { "id": "21", "nombre": "ELECTIVA SOCIOHUM. I", "sem": 3, "fila": 8, "cred": 2, "area": "humanidades", "prereq": [], "codigos": ["ES1"], "desc": "Electiva en formación integral." },
+
+  { "id": "22", "nombre": "REDES AREA LOCAL", "sem": 4, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["15"], "codigos": ["RELAL11"], "desc": "Diseño y configuración de redes LAN." },
+  { "id": "23", "nombre": "LENG. DE POO", "sem": 4, "fila": 2, "cred": 3, "area": "programacion", "prereq": ["16"], "codigos": ["LPORO11","LEN2403"], "desc": "Programación orientada a objetos." },
+  { "id": "24", "nombre": "ESTRUCTURA DE DATOS", "sem": 4, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["16"], "codigos": ["ESTDA11","EST2402"], "desc": "Organización y manejo de estructuras de datos." },
+  { "id": "25", "nombre": "ELECTIVA COMPLEM. II", "sem": 4, "fila": 4, "cred": 2, "area": "gestion", "prereq": ["11"], "codigos": ["EC2"], "desc": "Asignatura electiva complementaria." },
+  { "id": "26", "nombre": "PROF. I", "sem": 4, "fila": 5, "cred": 3, "area": "programacion", "prereq": [], "codigos": ["PROF1"], "desc": "Primer curso de profundización." },
+  { "id": "27", "nombre": "COMP. INVESTIGAT. o EMPRISMO I", "sem": 4, "fila": 6, "cred": 2, "area": "gestion", "prereq": ["19"], "codigos": ["COMINV21","COMEMP21"], "desc": "Competencias investigativas o emprendimiento." },
+  { "id": "28", "nombre": "RETÓRICA Y ARGUMENTACION", "sem": 4, "fila": 7, "cred": 2, "area": "humanidades", "prereq": ["20"], "codigos": ["RETOR41"], "desc": "Argumentación y discurso." },
+
+  { "id": "29", "nombre": "REDES DE AREA EXTENSA", "sem": 5, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["22"], "codigos": ["REDEX11"], "desc": "Redes WAN y comunicaciones avanzadas." },
+  { "id": "30", "nombre": "LENGUAJE DE PROGRAMACIÓN PARA LA WEB", "sem": 5, "fila": 2, "cred": 3, "area": "programacion", "prereq": ["23"], "codigos": ["LENWEB11"], "desc": "Desarrollo de aplicaciones web." },
+  { "id": "31", "nombre": "BASES DE DATOS I", "sem": 5, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["24"], "codigos": ["BADAT11","BAS24033"], "desc": "Modelado y gestión de bases de datos." },
+  { "id": "32", "nombre": "LENG. DE PROGR. PARA DISP. MÓVILES", "sem": 5, "fila": 4, "cred": 3, "area": "programacion", "prereq": ["23"], "codigos": ["LEDISP11"], "desc": "Desarrollo de apps móviles." },
+  { "id": "33", "nombre": "PROF. II", "sem": 5, "fila": 5, "cred": 3, "area": "programacion", "prereq": ["26"], "codigos": ["PROF2"], "desc": "Segundo curso de profundización." },
+  { "id": "34", "nombre": "COMP. INVESTIGAT. o EMPRISMO  II", "sem": 5, "fila": 6, "cred": 2, "area": "gestion", "prereq": ["27"], "codigos": ["COMINV22","COMEMP22"], "desc": "Continuación de investigación o emprendimiento." },
+  { "id": "35", "nombre": "PRÁCTICA I", "sem": 5, "fila": 7, "cred": 3, "area": "gestion", "prereq": ["27"], "codigos": ["PRACEMS21","PRA2406"], "desc": "Primera práctica profesional." },
+  { "id": "36", "nombre": "ELECTIVA SOCIOHUM. II", "sem": 5, "fila": 8, "cred": 2, "area": "humanidades", "prereq": ["21"], "codigos": ["ES2"], "desc": "Electiva en formación integral." },
+
+  { "id": "37", "nombre": "SERVIDORES", "sem": 6, "fila": 1, "cred": 3, "area": "sistemas", "prereq": ["29"], "codigos": ["SERVI11"], "desc": "Configuración y administración de servidores." },
+  { "id": "38", "nombre": "LABORATORIO DE SOFTWARE", "sem": 6, "fila": 2, "cred": 3, "area": "programacion", "prereq": ["30"], "codigos": ["LABSO11"], "desc": "Desarrollo práctico de software." },
+  { "id": "39", "nombre": "BASES DE DATOS II", "sem": 6, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["31"], "codigos": ["BDATO12","BAS24044"], "desc": "Administración avanzada de bases de datos." },
+  { "id": "40", "nombre": "PROF. III", "sem": 6, "fila": 5, "cred": 3, "area": "programacion", "prereq": ["33"], "codigos": ["PROF3"], "desc": "Tercer curso de profundización." },
+  { "id": "41", "nombre": "COMP. INVESTIGAT. o EMPRISMO  III", "sem": 6, "fila": 6, "cred": 2, "area": "gestion", "prereq": ["34"], "codigos": ["COMINV23","COMEMP23"], "desc": "Nivel avanzado de investigación o emprendimiento." },
+  { "id": "42", "nombre": "PRÁCTICA II", "sem": 6, "fila": 7, "cred": 3, "area": "gestion", "prereq": ["35"], "codigos": ["PRAEM212","PRA24077"], "desc": "Segunda práctica profesional." },
+  { "id": "43", "nombre": "ÉTICA PROFESIONAL", "sem": 6, "fila": 8, "cred": 3, "area": "humanidades", "prereq": ["28"], "codigos": ["VETICA41","ETICA41","ETI2407"], "desc": "Ética en el ejercicio profesional." }
+]
+
+
+

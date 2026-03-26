@@ -1,0 +1,821 @@
+[
+  {
+    "id": "1",
+    "nombre": "MATERIA 1",
+    "sem": 1,
+    "fila": 1,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD001"
+    ],
+    "desc": "Descripción de la materia 1."
+  },
+  {
+    "id": "2",
+    "nombre": "MATERIA 2",
+    "sem": 1,
+    "fila": 2,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD002"
+    ],
+    "desc": "Descripción de la materia 2."
+  },
+  {
+    "id": "3",
+    "nombre": "MATERIA 3",
+    "sem": 1,
+    "fila": 3,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD003"
+    ],
+    "desc": "Descripción de la materia 3."
+  },
+  {
+    "id": "4",
+    "nombre": "MATERIA 4",
+    "sem": 1,
+    "fila": 4,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD004"
+    ],
+    "desc": "Descripción de la materia 4."
+  },
+  {
+    "id": "5",
+    "nombre": "MATERIA 5",
+    "sem": 1,
+    "fila": 5,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD005"
+    ],
+    "desc": "Descripción de la materia 5."
+  },
+  {
+    "id": "6",
+    "nombre": "MATERIA 6",
+    "sem": 1,
+    "fila": 6,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD006"
+    ],
+    "desc": "Descripción de la materia 6."
+  },
+  {
+    "id": "7",
+    "nombre": "MATERIA 7",
+    "sem": 2,
+    "fila": 1,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD007"
+    ],
+    "desc": "Descripción de la materia 7."
+  },
+  {
+    "id": "8",
+    "nombre": "MATERIA 8",
+    "sem": 2,
+    "fila": 2,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD008"
+    ],
+    "desc": "Descripción de la materia 8."
+  },
+  {
+    "id": "9",
+    "nombre": "MATERIA 9",
+    "sem": 2,
+    "fila": 3,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD009"
+    ],
+    "desc": "Descripción de la materia 9."
+  },
+  {
+    "id": "10",
+    "nombre": "MATERIA 10",
+    "sem": 2,
+    "fila": 4,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD010"
+    ],
+    "desc": "Descripción de la materia 10."
+  },
+  {
+    "id": "11",
+    "nombre": "MATERIA 11",
+    "sem": 2,
+    "fila": 5,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD011"
+    ],
+    "desc": "Descripción de la materia 11."
+  },
+  {
+    "id": "12",
+    "nombre": "MATERIA 12",
+    "sem": 2,
+    "fila": 6,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD012"
+    ],
+    "desc": "Descripción de la materia 12."
+  },
+  {
+    "id": "13",
+    "nombre": "MATERIA 13",
+    "sem": 3,
+    "fila": 1,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD013"
+    ],
+    "desc": "Descripción de la materia 13."
+  },
+  {
+    "id": "14",
+    "nombre": "MATERIA 14",
+    "sem": 3,
+    "fila": 2,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD014"
+    ],
+    "desc": "Descripción de la materia 14."
+  },
+  {
+    "id": "15",
+    "nombre": "MATERIA 15",
+    "sem": 3,
+    "fila": 3,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD015"
+    ],
+    "desc": "Descripción de la materia 15."
+  },
+  {
+    "id": "16",
+    "nombre": "MATERIA 16",
+    "sem": 3,
+    "fila": 4,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD016"
+    ],
+    "desc": "Descripción de la materia 16."
+  },
+  {
+    "id": "17",
+    "nombre": "MATERIA 17",
+    "sem": 3,
+    "fila": 5,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD017"
+    ],
+    "desc": "Descripción de la materia 17."
+  },
+  {
+    "id": "18",
+    "nombre": "MATERIA 18",
+    "sem": 3,
+    "fila": 6,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD018"
+    ],
+    "desc": "Descripción de la materia 18."
+  },
+  {
+    "id": "19",
+    "nombre": "MATERIA 19",
+    "sem": 4,
+    "fila": 1,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD019"
+    ],
+    "desc": "Descripción de la materia 19."
+  },
+  {
+    "id": "20",
+    "nombre": "MATERIA 20",
+    "sem": 4,
+    "fila": 2,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD020"
+    ],
+    "desc": "Descripción de la materia 20."
+  },
+  {
+    "id": "21",
+    "nombre": "MATERIA 21",
+    "sem": 4,
+    "fila": 3,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD021"
+    ],
+    "desc": "Descripción de la materia 21."
+  },
+  {
+    "id": "22",
+    "nombre": "MATERIA 22",
+    "sem": 4,
+    "fila": 4,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD022"
+    ],
+    "desc": "Descripción de la materia 22."
+  },
+  {
+    "id": "23",
+    "nombre": "MATERIA 23",
+    "sem": 4,
+    "fila": 5,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD023"
+    ],
+    "desc": "Descripción de la materia 23."
+  },
+  {
+    "id": "24",
+    "nombre": "MATERIA 24",
+    "sem": 4,
+    "fila": 6,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD024"
+    ],
+    "desc": "Descripción de la materia 24."
+  },
+  {
+    "id": "25",
+    "nombre": "MATERIA 25",
+    "sem": 5,
+    "fila": 1,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD025"
+    ],
+    "desc": "Descripción de la materia 25."
+  },
+  {
+    "id": "26",
+    "nombre": "MATERIA 26",
+    "sem": 5,
+    "fila": 2,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD026"
+    ],
+    "desc": "Descripción de la materia 26."
+  },
+  {
+    "id": "27",
+    "nombre": "MATERIA 27",
+    "sem": 5,
+    "fila": 3,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD027"
+    ],
+    "desc": "Descripción de la materia 27."
+  },
+  {
+    "id": "28",
+    "nombre": "MATERIA 28",
+    "sem": 5,
+    "fila": 4,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD028"
+    ],
+    "desc": "Descripción de la materia 28."
+  },
+  {
+    "id": "29",
+    "nombre": "MATERIA 29",
+    "sem": 5,
+    "fila": 5,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD029"
+    ],
+    "desc": "Descripción de la materia 29."
+  },
+  {
+    "id": "30",
+    "nombre": "MATERIA 30",
+    "sem": 5,
+    "fila": 6,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD030"
+    ],
+    "desc": "Descripción de la materia 30."
+  },
+  {
+    "id": "31",
+    "nombre": "MATERIA 31",
+    "sem": 6,
+    "fila": 1,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD031"
+    ],
+    "desc": "Descripción de la materia 31."
+  },
+  {
+    "id": "32",
+    "nombre": "MATERIA 32",
+    "sem": 6,
+    "fila": 2,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD032"
+    ],
+    "desc": "Descripción de la materia 32."
+  },
+  {
+    "id": "33",
+    "nombre": "MATERIA 33",
+    "sem": 6,
+    "fila": 3,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD033"
+    ],
+    "desc": "Descripción de la materia 33."
+  },
+  {
+    "id": "34",
+    "nombre": "MATERIA 34",
+    "sem": 6,
+    "fila": 4,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD034"
+    ],
+    "desc": "Descripción de la materia 34."
+  },
+  {
+    "id": "35",
+    "nombre": "MATERIA 35",
+    "sem": 6,
+    "fila": 5,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD035"
+    ],
+    "desc": "Descripción de la materia 35."
+  },
+  {
+    "id": "36",
+    "nombre": "MATERIA 36",
+    "sem": 6,
+    "fila": 6,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD036"
+    ],
+    "desc": "Descripción de la materia 36."
+  },
+  {
+    "id": "37",
+    "nombre": "MATERIA 37",
+    "sem": 7,
+    "fila": 1,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD037"
+    ],
+    "desc": "Descripción de la materia 37."
+  },
+  {
+    "id": "38",
+    "nombre": "MATERIA 38",
+    "sem": 7,
+    "fila": 2,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD038"
+    ],
+    "desc": "Descripción de la materia 38."
+  },
+  {
+    "id": "39",
+    "nombre": "MATERIA 39",
+    "sem": 7,
+    "fila": 3,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD039"
+    ],
+    "desc": "Descripción de la materia 39."
+  },
+  {
+    "id": "40",
+    "nombre": "MATERIA 40",
+    "sem": 7,
+    "fila": 4,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD040"
+    ],
+    "desc": "Descripción de la materia 40."
+  },
+  {
+    "id": "41",
+    "nombre": "MATERIA 41",
+    "sem": 7,
+    "fila": 5,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD041"
+    ],
+    "desc": "Descripción de la materia 41."
+  },
+  {
+    "id": "42",
+    "nombre": "MATERIA 42",
+    "sem": 7,
+    "fila": 6,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD042"
+    ],
+    "desc": "Descripción de la materia 42."
+  },
+  {
+    "id": "43",
+    "nombre": "MATERIA 43",
+    "sem": 8,
+    "fila": 1,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD043"
+    ],
+    "desc": "Descripción de la materia 43."
+  },
+  {
+    "id": "44",
+    "nombre": "MATERIA 44",
+    "sem": 8,
+    "fila": 2,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD044"
+    ],
+    "desc": "Descripción de la materia 44."
+  },
+  {
+    "id": "45",
+    "nombre": "MATERIA 45",
+    "sem": 8,
+    "fila": 3,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD045"
+    ],
+    "desc": "Descripción de la materia 45."
+  },
+  {
+    "id": "46",
+    "nombre": "MATERIA 46",
+    "sem": 8,
+    "fila": 4,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD046"
+    ],
+    "desc": "Descripción de la materia 46."
+  },
+  {
+    "id": "47",
+    "nombre": "MATERIA 47",
+    "sem": 8,
+    "fila": 5,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD047"
+    ],
+    "desc": "Descripción de la materia 47."
+  },
+  {
+    "id": "48",
+    "nombre": "MATERIA 48",
+    "sem": 8,
+    "fila": 6,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD048"
+    ],
+    "desc": "Descripción de la materia 48."
+  },
+  {
+    "id": "49",
+    "nombre": "MATERIA 49",
+    "sem": 9,
+    "fila": 1,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD049"
+    ],
+    "desc": "Descripción de la materia 49."
+  },
+  {
+    "id": "50",
+    "nombre": "MATERIA 50",
+    "sem": 9,
+    "fila": 2,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD050"
+    ],
+    "desc": "Descripción de la materia 50."
+  },
+  {
+    "id": "51",
+    "nombre": "MATERIA 51",
+    "sem": 9,
+    "fila": 3,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD051"
+    ],
+    "desc": "Descripción de la materia 51."
+  },
+  {
+    "id": "52",
+    "nombre": "MATERIA 52",
+    "sem": 9,
+    "fila": 4,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD052"
+    ],
+    "desc": "Descripción de la materia 52."
+  },
+  {
+    "id": "53",
+    "nombre": "MATERIA 53",
+    "sem": 9,
+    "fila": 5,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD053"
+    ],
+    "desc": "Descripción de la materia 53."
+  },
+  {
+    "id": "54",
+    "nombre": "MATERIA 54",
+    "sem": 9,
+    "fila": 6,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD054"
+    ],
+    "desc": "Descripción de la materia 54."
+  },
+  {
+    "id": "55",
+    "nombre": "MATERIA 55",
+    "sem": 10,
+    "fila": 1,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD055"
+    ],
+    "desc": "Descripción de la materia 55."
+  },
+  {
+    "id": "56",
+    "nombre": "MATERIA 56",
+    "sem": 10,
+    "fila": 2,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD056"
+    ],
+    "desc": "Descripción de la materia 56."
+  },
+  {
+    "id": "57",
+    "nombre": "MATERIA 57",
+    "sem": 10,
+    "fila": 3,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD057"
+    ],
+    "desc": "Descripción de la materia 57."
+  },
+  {
+    "id": "58",
+    "nombre": "MATERIA 58",
+    "sem": 10,
+    "fila": 4,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD058"
+    ],
+    "desc": "Descripción de la materia 58."
+  },
+  {
+    "id": "59",
+    "nombre": "MATERIA 59",
+    "sem": 10,
+    "fila": 5,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD059"
+    ],
+    "desc": "Descripción de la materia 59."
+  },
+  {
+    "id": "60",
+    "nombre": "MATERIA 60",
+    "sem": 10,
+    "fila": 6,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD060"
+    ],
+    "desc": "Descripción de la materia 60."
+  },
+  {
+    "id": "61",
+    "nombre": "MATERIA 61",
+    "sem": 11,
+    "fila": 1,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD061"
+    ],
+    "desc": "Descripción de la materia 61."
+  },
+  {
+    "id": "62",
+    "nombre": "MATERIA 62",
+    "sem": 11,
+    "fila": 2,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD062"
+    ],
+    "desc": "Descripción de la materia 62."
+  },
+  {
+    "id": "63",
+    "nombre": "MATERIA 63",
+    "sem": 11,
+    "fila": 3,
+    "cred": 3,
+    "area": "programacion",
+    "prereq": [],
+    "codigos": [
+      "COD063"
+    ],
+    "desc": "Descripción de la materia 63."
+  }
+]
