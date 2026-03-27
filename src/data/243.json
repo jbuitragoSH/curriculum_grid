@@ -28,7 +28,7 @@
   { "id": "23", "nombre": "LENG. DE POO", "sem": 4, "fila": 2, "cred": 3, "area": "programacion", "prereq": ["16"], "codigos": ["LPORO11","LEN2403"], "desc": "Programación orientada a objetos." },
   { "id": "24", "nombre": "ESTRUCTURA DE DATOS", "sem": 4, "fila": 3, "cred": 3, "area": "programacion", "prereq": ["16"], "codigos": ["ESTDA11","EST2402"], "desc": "Organización y manejo de estructuras de datos." },
   { "id": "25", "nombre": "ELECTIVA COMPLEM. II", "sem": 4, "fila": 4, "cred": 2, "area": "gestion", "prereq": ["11"], "codigos": ["EC2"], "desc": "Asignatura electiva complementaria." },
-  { "id": "26", "nombre": "PROF. I", "sem": 4, "fila": 5, "cred": 3, "area": "programacion", "prereq": [], "codigos": ["PROF1"], "desc": "Primer curso de profundización." },
+  { "id": "26", "nombre": "PROF. I", "sem": 4, "fila": 5, "cred": 3, "area": "programacion", "prereq": [{ "id": ["22","23"], "tipo": "tunel" }], "codigos": ["PROF1"], "desc": "Primer curso de profundización." },
   { "id": "27", "nombre": "COMP. INVESTIGAT. o EMPRISMO I", "sem": 4, "fila": 6, "cred": 2, "area": "gestion", "prereq": ["19"], "codigos": ["COMINV21","COMEMP21"], "desc": "Competencias investigativas o emprendimiento." },
   { "id": "28", "nombre": "RETÓRICA Y ARGUMENTACION", "sem": 4, "fila": 7, "cred": 2, "area": "humanidades", "prereq": ["20"], "codigos": ["RETOR41"], "desc": "Argumentación y discurso." },
 
